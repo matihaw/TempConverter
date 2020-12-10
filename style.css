@@ -1,0 +1,36 @@
+body {
+    background-color: #8488e0;
+
+}
+
+.main {
+    margin: 10% 30%;
+}
+
+.row {
+    padding: 0 1em 0 0 ;
+
+    background-color: #c1c0e0;
+}
+
+.top {
+    padding: 1em;
+    text-align: center;
+}
+
+
+.phpOut{
+    text-align: right;
+}
+#submit{
+    width: 200px;
+    height: 50px;
+    margin:  5%  0% 0 0 ;
+}
+form{
+    margin: 1em;
+}
+#phpOut{
+    margin-top: 2em;
+    font-size: 30px;
+}
