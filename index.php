@@ -25,17 +25,17 @@
                 <div class="col-6">
                     <label for="inputUnit">Wybierz jednostkę: </label>
                     <select name="inputUnit" class="form-control">
-                        <option value="1">Celcius</option>
-                        <option value="2">Fahrenheit</option>
-                        <option value="3">Kalwin</option>
+                        <option value="Celcius">Celcius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kalwin">Kalwin</option>
                     </select>
                 </div>
                 <div class="col-6">
                     <label for="outputUnit" class="label">Przelicz na:</label>
                     <select name="outputUnit" class="form-control">
-                        <option value="1">Celcius</option>
-                        <option value="2">Fahrenheit</option>
-                        <option value="3">Kalwin</option>
+                        <option value="Celcius">Celcius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kalwin">Kalwin</option>
                     </select>
                 </div>
                 <div class="form-group row">

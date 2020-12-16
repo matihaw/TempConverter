@@ -29,60 +29,57 @@ class Temp {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getUnit(): int {
+    public function getUnit(): string {
         return $this->unit;
     }
 
     /**
-     * @param int $unit
+     * @param string $unit
      */
-    public function setUnit(int $unit) {
+    public function setUnit(string $unit) {
         $this->unit = $unit;
     }
 
     /**
-     * @param int $outputUnit
-     * 1 - Celcius
-     * 2 - Fahrenheit
-     * 3 - Kalwin
+     * @param string $outputUnit
      */
-    public function convertValue(int $outputUnit){
+    public function convertValue(string $outputUnit){
         switch ($this->unit){
-            case 1:
+            case "Celcius":
                 switch ($outputUnit) {
-                    case 1:
+                    case "Celcius":
                         break;
-                    case 2:
+                    case "Fahrenheit":
                         $this->value = ($this->value * 9 / 5) + 32;
                         break;
-                    case 3:
+                    case "Kalwin":
                         $this->value += 273.15;
                         break;
                 }
                 break;
-            case 2:
+            case "Fahrenheit":
                 switch ($outputUnit) {
-                    case 1:
+                    case "Celcius":
                         $this->value = ($this->value - 32) * 5 / 9;
                         break;
-                    case 2:
+                    case "Fahrenheit":
                         break;
-                    case 3:
+                    case "Kalwin":
                         $this->value = ($this->value + 459.67) * 5 / 9;
                         break;
                 }
                 break;
-            case 3:
+            case "Kalwin":
                 switch ($outputUnit) {
-                    case 1:
+                    case "Celcius":
                         $this->value = $this->value - 273.15 ;
                         break;
-                    case 2:
+                    case "Fahrenheit":
                         $this->value = ($this->value * 9/5) - 459.67  ;
                         break;
-                    case 3:
+                    case "Kalwin":
                         break;
                 }
                 break;
